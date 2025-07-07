@@ -52,19 +52,22 @@ Or manually install:
 ```sh
 pip install streamlit pandas numpy scikit-learn keras tensorflow joblib
 ```
-
-### 3. Run the Streamlit App
-
-```sh
-streamlit run Score_Predictor_App.py
-```
-
-### 4. Explore the Notebooks
+### 3. Explore the Notebooks
 
 Open the Jupyter notebooks for detailed data analysis, model training, and evaluation:
 
 - [`IPL_Score_Prediction_using_Machine_Learning.ipynb`](IPL_Score_Prediction_using_Machine_Learning.ipynb)
 - [`IPL_Score_Predictor_using_Deep_Learning.ipynb`](IPL_Score_Predictor_using_Deep_Learning.ipynb)
+
+### 4. Run the Streamlit App
+- Run the [`IPL_Score_Prediction_using_Machine_Learning.ipynb`](IPL_Score_Prediction_using_Machine_Learning.ipynb) notebook and after running the last cell save the best_ML_model_pipeline.joblib file in the cloned repository.
+- Then run the  app by the following command:
+```sh
+streamlit run Score_Predictor_App.py
+```
+
+- You can also run the app with Deep Learning model by just using the best obtained model and also by replacing the encoders and scaler.
+
 
 ## Data
 
@@ -79,14 +82,15 @@ The dataset [`ipl_data.csv`](ipl_data.csv) contains ball-by-ball IPL match data,
 
 ## Model Details
 
+- **Preprocessing:** Label encoding for categorical features, MinMax scaling for numerical features
 - **ML Models:** Random Forest, Gradient Boosting, Linear Regression (scikit-learn)
 - **DL Model:** Keras Sequential model with dense layers and dropout
-- **Preprocessing:** Label encoding for categorical features, MinMax scaling for numerical features
 
 ## Results
 
 - Models are evaluated using Mean Squared Error, Mean Absolute Error, and R² score.
 - The best model is selected based on validation performance.
+- Among all the models trained and tested, the Random forest model showed a R² score of 0.93 which was the highest.
 
 ## License
 
@@ -94,7 +98,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-- IPL dataset from [Kaggle](https://www.kaggle.com/datasets)
 - Built with [Streamlit](https://streamlit.io/), [scikit-learn](https://scikit-learn.org/), [Keras](https://keras.io/), and [TensorFlow](https://www.tensorflow.org/)
 
 ---
