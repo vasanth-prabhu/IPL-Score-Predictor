@@ -1,4 +1,4 @@
-# IPL-Score-Predictor
+# IPL Score Predictor
 
 Predict the total runs in an IPL match using Machine Learning and Deep Learning!
 
