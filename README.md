@@ -4,7 +4,7 @@ Predict the total runs in an IPL match using Machine Learning and Deep Learning!
 
 ## Overview
 
-This project provides interactive tools and models to predict the **total runs** scored in an IPL cricket match, based on real match conditions and player/team information. It includes:
+This project provides interactive tools and models to predict the **total runs** scored in an IPL cricket match based on real match conditions and player/team information. It includes:
 
 - A Streamlit web app for easy predictions.
 - Jupyter notebooks for both Machine Learning and Deep Learning approaches.
@@ -12,9 +12,9 @@ This project provides interactive tools and models to predict the **total runs**
 
 ## Features
 
-- Predict total runs using match context (venue, teams, batsmen, bowler, current score, etc.).
+- Predict total runs using match context (venue, teams, batsmen, bowler, current score etc.).
 - Interactive web app built with Streamlit.
-- Notebooks for data exploration, model training, and evaluation.
+- Notebooks for data exploration, model training and evaluation.
 - Both ML (Random Forest, Gradient Boosting, Linear Regression) and DL (Keras/TensorFlow) models.
 - Ready-to-use trained models and preprocessing tools.
 
@@ -71,7 +71,7 @@ streamlit run Score_Predictor_App.py
 
 ## Data
 
-The dataset [`ipl_data.csv`](ipl_data.csv) contains ball-by-ball IPL match data, including:
+The dataset [`ipl_data.csv`](ipl_data.csv) contains ball-by-ball IPL match data including:
 
 - Venue, Batting/Bowling teams
 - Batsman, Bowler
