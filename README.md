@@ -89,9 +89,12 @@ The dataset [`ipl_data.csv`](ipl_data.csv) contains ball-by-ball IPL match data,
 ## Results
 
 - Models are evaluated using Mean Squared Error, Mean Absolute Error, and R² score.
-- The best model is selected based on validation performance.
-- Among all the models trained and tested, the **Random forest model** showed a R² score of **0.93** which was the highest.
-
+- Among all the models trained and tested, the **Random Forest model** showed a R² score of **0.93** which was the highest.
+- R² score of all the models are:
+    - Random Forest model : 0.93
+    - Deep Learning model : 0.79
+    - Gradient Boosting model : 0.56
+    - Linear Regression model : 0.52
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
